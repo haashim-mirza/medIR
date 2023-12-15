@@ -77,16 +77,15 @@ class Doc2QueryAugmenter:
     This class is responsible for generating queries for a document.
     These queries can augment the document before indexing.
     """
-    def __init__(self, doc2query_model_name: str = 'doc2query/msmarco-t5-small-v1') -> None:
+    def __init__(self, doc2query_model_name: str = 'doc2query/msmarco-t5-base-v1') -> None:
         """
         Creates the T5 model object and the corresponding dense tokenizer.
         
         Args:
             doc2query_model_name: The name of the T5 model architecture used for generating queries
         """
-        self.device = torch.device('cpu')  # Do not change this unless you know what you are doing
+        self.device = torch.device('cpu')
 
-        # TODO (HW3): Create the dense tokenizer and query generation model using HuggingFace transformers
         self.tokenizer = T5Tokenizer.from_pretrained(doc2query_model_name)
         self.model = T5ForConditionalGeneration.from_pretrained(doc2query_model_name)
 

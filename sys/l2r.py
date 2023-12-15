@@ -7,6 +7,7 @@ from collections import defaultdict, Counter
 import numpy as np
 from document_preprocessor import Tokenizer
 from ranker import Ranker, TF, TF_IDF, BM25, PivotedNormalization, CrossEncoderScorer, WordCountCosineSimilarity
+import json
 
 class L2RRanker:
     def __init__(self, document_index: InvertedIndex, title_index: InvertedIndex,
@@ -66,7 +67,9 @@ class L2RRanker:
                     dwc = doc_word_counts[docid]
                 if docid in tit_word_counts.keys():
                     twc = tit_word_counts[docid]
-                X.append(self.feat_extractor.generate_features(docid=docid, doc_word_counts=dwc, title_word_counts=twc, query_parts=query_parts, query=query))
+                feats = self.feat_extractor.generate_features(docid=docid, doc_word_counts=dwc, title_word_counts=twc, query_parts=query_parts, query=query)
+
+                X.append(feats)
                 y.append(rel)
 
         return X, y, qgroups
@@ -107,17 +110,20 @@ class L2RRanker:
         """
         rel_ds = {}
         with open(training_data_filename, 'r') as f:
-            lines = f.readlines()
-            print(lines[0])
-            for line in tqdm(lines[1:], "preparing training data dict"):
-                vals = line.strip('\n').split(',')
-                k = vals[0]
-                tup = (int(vals[1]), int(vals[2]))
-                if k not in rel_ds.keys():
-                    rel_ds[k] = [tup]
-                else:
-                    rel_ds[k].append(tup)
-                line = f.readline()
+            train_data = json.load(f)
+            rel_ds = {k:v['scored_docs'] for k, v in train_data.items()}
+            
+            # lines = f.readlines()
+            # print(lines[0])
+            # for line in tqdm(lines[1:], "preparing training data dict"):
+            #     vals = line.strip('\n').split(',')
+            #     k = vals[0]
+            #     tup = (int(vals[1]), int(vals[2]))
+            #     if k not in rel_ds.keys():
+            #         rel_ds[k] = [tup]
+            #     else:
+            #         rel_ds[k].append(tup)
+            #     line = f.readline()
 
         print("relevance dict created")
 
@@ -144,8 +150,7 @@ class L2RRanker:
         
         return self.model.predict(featurized_docs=X)
     
-    def query(self, query: str, pseudofeedback_num_docs=0, pseudofeedback_alpha=0.8,
-              pseudofeedback_beta=0.2, user_id=None, mmr_lambda:int=1, mmr_threshold:int=100) -> list[tuple[int, float]]:
+    def query(self, query: str) -> list[tuple[int, float]]:
         """
         Retrieves potentially-relevant documents, constructs feature vectors for each query-document pair,
         uses the L2R model to rank these documents, and returns the ranked documents.
@@ -179,7 +184,7 @@ class L2RRanker:
         if len(rel_docs) == 0:
             return []
 
-        doc_scores = self.ranker.query(query, pseudofeedback_num_docs, pseudofeedback_alpha, pseudofeedback_beta)
+        doc_scores = self.ranker.query(query)
 
         top_doc_scores = []
         bottom_doc_scores = []
@@ -215,7 +220,7 @@ class L2RFeatureExtractor:
     def __init__(self, document_index: InvertedIndex, title_index: InvertedIndex,
                  doc_category_info: dict[int, list[str]],
                  document_preprocessor: Tokenizer, stopwords: set[str],
-                 recognized_categories: set[str], docid_to_network_features: dict[int, dict[str, float]],
+                 recognized_categories: set[str],
                  ce_scorer: CrossEncoderScorer) -> None:
         """
         Initializes a L2RFeatureExtractor object.
@@ -238,7 +243,6 @@ class L2RFeatureExtractor:
         self.doc_cat_info = doc_category_info
         self.doc_preproc = document_preprocessor
         self.stopwords = stopwords
-        self.docid_net_feats = docid_to_network_features
         self.ce_scorer = ce_scorer
         self.tittfs = []
 
@@ -408,8 +412,11 @@ class L2RFeatureExtractor:
 
         Returns:
             The Cross-Encoder score
-        """        
-        return self.ce_scorer.score(docid=docid, query=query)
+        """
+        score = self.ce_scorer.score(docid=docid, query=query)
+        if score > 0:
+            print('big ce here')
+        return score
 
     def get_query_doc_word_inclusion_ratio(self, docid: int, query_parts: "list[str]") -> float:
         included = []

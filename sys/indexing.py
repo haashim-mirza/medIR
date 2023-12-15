@@ -227,8 +227,8 @@ class Indexer:
     @staticmethod
     
     def create_index(dataset_path: str,
-                     document_preprocessor: Tokenizer, stopwords: set[str], text_key="text",
-                     max_docs: int = -1, doc_augment_dict: dict[int, list[str]] | None = None) -> InvertedIndex:
+                     document_preprocessor: Tokenizer, stopwords: set[str], text_key="text", 
+                     doc_augment_key: str="", foldername: str="") -> InvertedIndex:
         """
         Creates an inverted index.
 
@@ -254,17 +254,18 @@ class Indexer:
         index = BasicInvertedIndex()
         word_freqs = {}
         with open(dataset_path) as f:
-            max_docs = sum(1 for _ in tqdm(f, "finding max_docs")) if max_docs == -1 else max_docs
-        print("found max_docs")
+            num_docs = sum(1 for _ in tqdm(f, "finding max_docs"))
+        print("found num_docs")
 
         with open(dataset_path, 'r') as f:
-            for _ in tqdm(range(max_docs), "counting corpus frequencies"):
+            for _ in tqdm(range(num_docs), "counting corpus frequencies"):
                 doc = json.loads(f.readline())
                 docid = doc["docid"]
                 text = doc[text_key]
-                if doc_augment_dict is not None:
-                    for q in doc_augment_dict[docid]:
+                if doc_augment_key != "":
+                    for q in doc[doc_augment_key]:
                         text += " " + q
+
                 tokens = document_preprocessor.tokenize(text)
                 for tok in tokens:
                     if tok in word_freqs.keys():
@@ -274,12 +275,12 @@ class Indexer:
         print("got corpus word frequencies")
         
         with open(dataset_path, 'r') as f:
-            for _ in tqdm(range(max_docs), "adding docs"):
+            for _ in tqdm(range(num_docs), "adding docs"):
                 doc = json.loads(f.readline())
                 docid = doc["docid"]
                 text = doc[text_key]
-                if doc_augment_dict is not None:
-                    for q in doc_augment_dict[docid]:
+                if doc_augment_key != "":
+                    for q in doc[doc_augment_key]:
                         text += " " + q
 
                 tokens = document_preprocessor.tokenize(text)
@@ -303,7 +304,10 @@ class Indexer:
 
         print("statistics updated")
 
-        index.save(text_key + "_index")
+        if foldername == "":
+            index.save(text_key + "_index")
+        else:
+            index.save(foldername)
 
         print("save complete")
 

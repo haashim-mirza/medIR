@@ -34,20 +34,13 @@ class Ranker:
         self.stopwords = stopwords
         self.raw_text_dict = raw_text_dict
 
-    def query(self, query: str, pseudofeedback_num_docs=0, pseudofeedback_alpha=0.8,
-              pseudofeedback_beta=0.2) -> list[tuple[int, float]]:
+    def query(self, query: str) -> list[tuple[int, float]]:
         """
         Searches the collection for relevant documents to the query and
         returns a list of documents ordered by their relevance (most relevant first).
 
         Args:
             query: The query to search for
-            pseudofeedback_num_docs: If pseudo-feedback is requested, the number
-                 of top-ranked documents to be used in the query,
-            pseudofeedback_alpha: If pseudo-feedback is used, the alpha parameter for weighting
-                how much to include of the original query in the updated query
-            pseudofeedback_beta: If pseudo-feedback is used, the beta parameter for weighting
-                how much to include of the relevant documents in the updated query
 
         Returns:
             A list containing tuples of the documents (ids) and their relevance scores
@@ -154,10 +147,7 @@ class PivotedNormalization(RelevanceScorer):
         self.b = parameters['b']
 
     def score(self, docid: int, doc_word_counts: dict[str, int], query_word_counts: dict[str, int]) -> float:
-        print(self.index.index)
         stats = self.index.get_statistics()
-        print(stats)
-        print('checking 0', stats['mean_document_length'])
         doc_metadata = self.index.get_doc_metadata(docid)
 
         scores = []
