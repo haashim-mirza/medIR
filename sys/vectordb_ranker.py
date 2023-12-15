@@ -19,8 +19,12 @@ class VectorDBRanker(Ranker):
 
         Using zip(encoded_docs, row_to_docid) should give you the mapping between the docid and the embedding.
         """
-        self.embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-        self.db = FAISS.load_local("symptomdb.faiss", self.embeddings)
+        self.embeddings = HuggingFaceEmbeddings(
+            model_name="pritamdeka/S-PubMedBert-MS-MARCO"
+        )
+        self.db = FAISS.load_local("symptomdb2.faiss", self.embeddings)
+        # self.embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+        # self.db = FAISS.load_local("symptomdb.faiss", self.embeddings)
         self.maps = raw_id_to_text
 
     def query(self, query: str) -> list[tuple[int, float]]:
@@ -52,14 +56,34 @@ class VectorDBRanker(Ranker):
         return tups
 
 
-# import json
+import json
 
-# docid_to_text = {}
-# with open("final_data.json", "r") as f:
-#     for line in f:
-#         raw_data = json.loads(line)
-#         docid_to_text[int(raw_data["docid"])] = raw_data["text"]
+docid_to_text = {}
+with open("final_data.json", "r") as f:
+    for line in f:
+        raw_data = json.loads(line)
+        docid_to_text[int(raw_data["docid"])] = raw_data["text"]
 
 
 # instance = VectorDBRanker(raw_id_to_text=docid_to_text)
 # print(instance.query("I have a headache"))
+
+res_1 = [
+    (981, -21.280967205811667),
+    (21, -21.67465653447968),
+    (410, -22.3849624300556),
+    (834, -23.43059539587995),
+]
+res_2 = [
+    (981, 0.33328755921641506),
+    (834, 0.25723074723965655),
+    (187, 0.2560577161519013),
+    (1030, 0.2519613796514305),
+]
+
+for key, score in res_1:
+    print(docid_to_text[key])
+
+print("--------------------------------------------------")
+for key, score in res_2:
+    print(docid_to_text[key])
