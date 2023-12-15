@@ -5,7 +5,7 @@ from langchain.vectorstores import FAISS
 from langchain.embeddings import HuggingFaceEmbeddings
 
 
-class VectorRanker(Ranker):
+class VectorDBRanker(Ranker):
     def __init__(self, raw_id_to_text: list[int]) -> None:
         """
         Initializes a VectorRanker object.
@@ -52,14 +52,14 @@ class VectorRanker(Ranker):
         return tups
 
 
-import json
+# import json
 
-docid_to_text = {}
-with open("final_data.json", "r") as f:
-    for line in f:
-        raw_data = json.loads(line)
-        docid_to_text[int(raw_data["docid"])] = raw_data["text"]
+# docid_to_text = {}
+# with open("final_data.json", "r") as f:
+#     for line in f:
+#         raw_data = json.loads(line)
+#         docid_to_text[int(raw_data["docid"])] = raw_data["text"]
 
 
-instance = VectorRanker(raw_id_to_text=docid_to_text)
-print(instance.query("I have a headache"))
+# instance = VectorDBRanker(raw_id_to_text=docid_to_text)
+# print(instance.query("I have a headache"))
