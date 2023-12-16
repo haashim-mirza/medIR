@@ -1,0 +1,253 @@
+,model,query,ndcg
+0,bm25_native_scores,What are the symptoms of a rash on the hands?,0.43827031084946777
+1,bm25_native_scores,what do we need to know before attelectasis is diagnosed?,1.0
+2,bm25_native_scores,How do you know if you have a popliteal artery aneurysm?,1.0
+3,bm25_native_scores,what are the symptoms of pediatric sleep apnea?,1.0
+4,bm25_native_scores,what is the common sign of spinal stenosis,1.0
+5,bm25_native_scores,who has a broken nose?,1.0
+6,bm25_native_scores,Which syndrome is known as triple X syndrome?,1.0
+7,bm25_native_scores,What are the symptoms of chronic hives?,0.6023097498746199
+8,bm25_native_scores,What is the typical time span for the development of symptoms of epiglottitis?,1.0
+9,bm25_native_scores,What are the symptoms of long term exposure to asbestos?,1.0
+10,bm25_native_scores,What can increase the pain?,0.3032266514147959
+11,bm25_native_scores,"Who does the word ""abuser"" refer to?",1.0
+12,bm25_native_scores,How can you tell if you are albinic?,0.0
+13,bm25_native_scores,What are some symptoms of pediatric sleep apnea?,1.0
+14,bm25_native_scores,What is the first symptom that should be looked for in infants with reflux?,1.0
+15,bm25_native_scores,what are signs and symptoms of encopresis?,1.0
+16,bm25_native_scores,What is the most common sign of hydrocele?,1.0
+17,bm25_native_scores,what can cause blood in your urine?,0.49523840430730154
+18,random_ranker_scores,What are the symptoms of a rash on the hands?,0.43827031084946777
+19,random_ranker_scores,what do we need to know before attelectasis is diagnosed?,1.0
+20,random_ranker_scores,How do you know if you have a popliteal artery aneurysm?,1.0
+21,random_ranker_scores,what are the symptoms of pediatric sleep apnea?,1.0
+22,random_ranker_scores,what is the common sign of spinal stenosis,1.0
+23,random_ranker_scores,who has a broken nose?,1.0
+24,random_ranker_scores,Which syndrome is known as triple X syndrome?,1.0
+25,random_ranker_scores,What are the symptoms of chronic hives?,0.6023097498746199
+26,random_ranker_scores,What is the typical time span for the development of symptoms of epiglottitis?,1.0
+27,random_ranker_scores,What are the symptoms of long term exposure to asbestos?,1.0
+28,random_ranker_scores,What can increase the pain?,0.3225181699807339
+29,random_ranker_scores,"Who does the word ""abuser"" refer to?",1.0
+30,random_ranker_scores,How can you tell if you are albinic?,0.0
+31,random_ranker_scores,What are some symptoms of pediatric sleep apnea?,1.0
+32,random_ranker_scores,What is the first symptom that should be looked for in infants with reflux?,1.0
+33,random_ranker_scores,what are signs and symptoms of encopresis?,1.0
+34,random_ranker_scores,What is the most common sign of hydrocele?,1.0
+35,random_ranker_scores,what can cause blood in your urine?,0.49523840430730154
+36,bm25_nq_nn_ranker,What are the symptoms of a rash on the hands?,0.43827031084946777
+37,bm25_nq_nn_ranker,what do we need to know before attelectasis is diagnosed?,1.0
+38,bm25_nq_nn_ranker,How do you know if you have a popliteal artery aneurysm?,1.0
+39,bm25_nq_nn_ranker,what are the symptoms of pediatric sleep apnea?,1.0
+40,bm25_nq_nn_ranker,what is the common sign of spinal stenosis,1.0
+41,bm25_nq_nn_ranker,who has a broken nose?,1.0
+42,bm25_nq_nn_ranker,Which syndrome is known as triple X syndrome?,1.0
+43,bm25_nq_nn_ranker,What are the symptoms of chronic hives?,0.6203616696709016
+44,bm25_nq_nn_ranker,What is the typical time span for the development of symptoms of epiglottitis?,1.0
+45,bm25_nq_nn_ranker,What are the symptoms of long term exposure to asbestos?,1.0
+46,bm25_nq_nn_ranker,What can increase the pain?,0.3032266514147959
+47,bm25_nq_nn_ranker,"Who does the word ""abuser"" refer to?",1.0
+48,bm25_nq_nn_ranker,How can you tell if you are albinic?,0.0
+49,bm25_nq_nn_ranker,What are some symptoms of pediatric sleep apnea?,1.0
+50,bm25_nq_nn_ranker,What is the first symptom that should be looked for in infants with reflux?,1.0
+51,bm25_nq_nn_ranker,what are signs and symptoms of encopresis?,1.0
+52,bm25_nq_nn_ranker,What is the most common sign of hydrocele?,1.0
+53,bm25_nq_nn_ranker,what can cause blood in your urine?,0.49523840430730154
+54,bm25_nq_nf_ranker,What are the symptoms of a rash on the hands?,0.43827031084946777
+55,bm25_nq_nf_ranker,what do we need to know before attelectasis is diagnosed?,1.0
+56,bm25_nq_nf_ranker,How do you know if you have a popliteal artery aneurysm?,1.0
+57,bm25_nq_nf_ranker,what are the symptoms of pediatric sleep apnea?,1.0
+58,bm25_nq_nf_ranker,what is the common sign of spinal stenosis,1.0
+59,bm25_nq_nf_ranker,who has a broken nose?,1.0
+60,bm25_nq_nf_ranker,Which syndrome is known as triple X syndrome?,1.0
+61,bm25_nq_nf_ranker,What are the symptoms of chronic hives?,0.6844256965104216
+62,bm25_nq_nf_ranker,What is the typical time span for the development of symptoms of epiglottitis?,1.0
+63,bm25_nq_nf_ranker,What are the symptoms of long term exposure to asbestos?,1.0
+64,bm25_nq_nf_ranker,What can increase the pain?,0.3032266514147959
+65,bm25_nq_nf_ranker,"Who does the word ""abuser"" refer to?",1.0
+66,bm25_nq_nf_ranker,How can you tell if you are albinic?,0.0
+67,bm25_nq_nf_ranker,What are some symptoms of pediatric sleep apnea?,1.0
+68,bm25_nq_nf_ranker,What is the first symptom that should be looked for in infants with reflux?,1.0
+69,bm25_nq_nf_ranker,what are signs and symptoms of encopresis?,1.0
+70,bm25_nq_nf_ranker,What is the most common sign of hydrocele?,1.0
+71,bm25_nq_nf_ranker,what can cause blood in your urine?,0.49523840430730154
+72,bienc_nq_nn_ranker,What are the symptoms of a rash on the hands?,0.43827031084946777
+73,bienc_nq_nn_ranker,what do we need to know before attelectasis is diagnosed?,1.0
+74,bienc_nq_nn_ranker,How do you know if you have a popliteal artery aneurysm?,1.0
+75,bienc_nq_nn_ranker,what are the symptoms of pediatric sleep apnea?,1.0
+76,bienc_nq_nn_ranker,what is the common sign of spinal stenosis,1.0
+77,bienc_nq_nn_ranker,who has a broken nose?,1.0
+78,bienc_nq_nn_ranker,Which syndrome is known as triple X syndrome?,1.0
+79,bienc_nq_nn_ranker,What are the symptoms of chronic hives?,0.6203616696709016
+80,bienc_nq_nn_ranker,What is the typical time span for the development of symptoms of epiglottitis?,1.0
+81,bienc_nq_nn_ranker,What are the symptoms of long term exposure to asbestos?,1.0
+82,bienc_nq_nn_ranker,What can increase the pain?,0.3032266514147959
+83,bienc_nq_nn_ranker,"Who does the word ""abuser"" refer to?",1.0
+84,bienc_nq_nn_ranker,How can you tell if you are albinic?,0.0
+85,bienc_nq_nn_ranker,What are some symptoms of pediatric sleep apnea?,1.0
+86,bienc_nq_nn_ranker,What is the first symptom that should be looked for in infants with reflux?,1.0
+87,bienc_nq_nn_ranker,what are signs and symptoms of encopresis?,1.0
+88,bienc_nq_nn_ranker,What is the most common sign of hydrocele?,1.0
+89,bienc_nq_nn_ranker,what can cause blood in your urine?,0.49523840430730154
+90,bienc_nq_na_ranker,What are the symptoms of a rash on the hands?,0.6507816954868461
+91,bienc_nq_na_ranker,what do we need to know before attelectasis is diagnosed?,1.0
+92,bienc_nq_na_ranker,How do you know if you have a popliteal artery aneurysm?,1.0
+93,bienc_nq_na_ranker,what are the symptoms of pediatric sleep apnea?,1.0
+94,bienc_nq_na_ranker,what is the common sign of spinal stenosis,1.0
+95,bienc_nq_na_ranker,who has a broken nose?,1.0
+96,bienc_nq_na_ranker,Which syndrome is known as triple X syndrome?,1.0
+97,bienc_nq_na_ranker,What are the symptoms of chronic hives?,0.6023097498746199
+98,bienc_nq_na_ranker,What is the typical time span for the development of symptoms of epiglottitis?,1.0
+99,bienc_nq_na_ranker,What are the symptoms of long term exposure to asbestos?,1.0
+100,bienc_nq_na_ranker,What can increase the pain?,0.3032266514147959
+101,bienc_nq_na_ranker,"Who does the word ""abuser"" refer to?",1.0
+102,bienc_nq_na_ranker,How can you tell if you are albinic?,0.0
+103,bienc_nq_na_ranker,What are some symptoms of pediatric sleep apnea?,1.0
+104,bienc_nq_na_ranker,What is the first symptom that should be looked for in infants with reflux?,1.0
+105,bienc_nq_na_ranker,what are signs and symptoms of encopresis?,1.0
+106,bienc_nq_na_ranker,What is the most common sign of hydrocele?,1.0
+107,bienc_nq_na_ranker,what can cause blood in your urine?,0.49523840430730154
+108,bienc_nq_nf_ranker,What are the symptoms of a rash on the hands?,0.6507816954868461
+109,bienc_nq_nf_ranker,what do we need to know before attelectasis is diagnosed?,1.0
+110,bienc_nq_nf_ranker,How do you know if you have a popliteal artery aneurysm?,1.0
+111,bienc_nq_nf_ranker,what are the symptoms of pediatric sleep apnea?,1.0
+112,bienc_nq_nf_ranker,what is the common sign of spinal stenosis,1.0
+113,bienc_nq_nf_ranker,who has a broken nose?,1.0
+114,bienc_nq_nf_ranker,Which syndrome is known as triple X syndrome?,1.0
+115,bienc_nq_nf_ranker,What are the symptoms of chronic hives?,0.6023097498746199
+116,bienc_nq_nf_ranker,What is the typical time span for the development of symptoms of epiglottitis?,1.0
+117,bienc_nq_nf_ranker,What are the symptoms of long term exposure to asbestos?,1.0
+118,bienc_nq_nf_ranker,What can increase the pain?,0.3032266514147959
+119,bienc_nq_nf_ranker,"Who does the word ""abuser"" refer to?",1.0
+120,bienc_nq_nf_ranker,How can you tell if you are albinic?,0.0
+121,bienc_nq_nf_ranker,What are some symptoms of pediatric sleep apnea?,1.0
+122,bienc_nq_nf_ranker,What is the first symptom that should be looked for in infants with reflux?,1.0
+123,bienc_nq_nf_ranker,what are signs and symptoms of encopresis?,1.0
+124,bienc_nq_nf_ranker,What is the most common sign of hydrocele?,1.0
+125,bienc_nq_nf_ranker,what can cause blood in your urine?,0.49523840430730154
+126,bienc_tq_nf_ranker,What are the symptoms of a rash on the hands?,0.6089147767939016
+127,bienc_tq_nf_ranker,what do we need to know before attelectasis is diagnosed?,1.0
+128,bienc_tq_nf_ranker,How do you know if you have a popliteal artery aneurysm?,1.0
+129,bienc_tq_nf_ranker,what are the symptoms of pediatric sleep apnea?,1.0
+130,bienc_tq_nf_ranker,what is the common sign of spinal stenosis,1.0
+131,bienc_tq_nf_ranker,who has a broken nose?,1.0
+132,bienc_tq_nf_ranker,Which syndrome is known as triple X syndrome?,1.0
+133,bienc_tq_nf_ranker,What are the symptoms of chronic hives?,0.6023097498746199
+134,bienc_tq_nf_ranker,What is the typical time span for the development of symptoms of epiglottitis?,1.0
+135,bienc_tq_nf_ranker,What are the symptoms of long term exposure to asbestos?,1.0
+136,bienc_tq_nf_ranker,What can increase the pain?,0.3032266514147959
+137,bienc_tq_nf_ranker,"Who does the word ""abuser"" refer to?",1.0
+138,bienc_tq_nf_ranker,How can you tell if you are albinic?,0.0
+139,bienc_tq_nf_ranker,What are some symptoms of pediatric sleep apnea?,1.0
+140,bienc_tq_nf_ranker,What is the first symptom that should be looked for in infants with reflux?,1.0
+141,bienc_tq_nf_ranker,what are signs and symptoms of encopresis?,1.0
+142,bienc_tq_nf_ranker,What is the most common sign of hydrocele?,1.0
+143,bienc_tq_nf_ranker,what can cause blood in your urine?,0.49523840430730154
+144,bienc_sq_nf_ranker,What are the symptoms of a rash on the hands?,0.617319474811114
+145,bienc_sq_nf_ranker,what do we need to know before attelectasis is diagnosed?,1.0
+146,bienc_sq_nf_ranker,How do you know if you have a popliteal artery aneurysm?,1.0
+147,bienc_sq_nf_ranker,what are the symptoms of pediatric sleep apnea?,1.0
+148,bienc_sq_nf_ranker,what is the common sign of spinal stenosis,1.0
+149,bienc_sq_nf_ranker,who has a broken nose?,1.0
+150,bienc_sq_nf_ranker,Which syndrome is known as triple X syndrome?,1.0
+151,bienc_sq_nf_ranker,What are the symptoms of chronic hives?,0.6023097498746199
+152,bienc_sq_nf_ranker,What is the typical time span for the development of symptoms of epiglottitis?,1.0
+153,bienc_sq_nf_ranker,What are the symptoms of long term exposure to asbestos?,1.0
+154,bienc_sq_nf_ranker,What can increase the pain?,0.3032266514147959
+155,bienc_sq_nf_ranker,"Who does the word ""abuser"" refer to?",1.0
+156,bienc_sq_nf_ranker,How can you tell if you are albinic?,0.0
+157,bienc_sq_nf_ranker,What are some symptoms of pediatric sleep apnea?,1.0
+158,bienc_sq_nf_ranker,What is the first symptom that should be looked for in infants with reflux?,1.0
+159,bienc_sq_nf_ranker,what are signs and symptoms of encopresis?,1.0
+160,bienc_sq_nf_ranker,What is the most common sign of hydrocele?,1.0
+161,bienc_sq_nf_ranker,what can cause blood in your urine?,0.49523840430730154
+162,bienc_aq_nf_ranker,What are the symptoms of a rash on the hands?,0.5829598410957698
+163,bienc_aq_nf_ranker,what do we need to know before attelectasis is diagnosed?,1.0
+164,bienc_aq_nf_ranker,How do you know if you have a popliteal artery aneurysm?,1.0
+165,bienc_aq_nf_ranker,what are the symptoms of pediatric sleep apnea?,1.0
+166,bienc_aq_nf_ranker,what is the common sign of spinal stenosis,1.0
+167,bienc_aq_nf_ranker,who has a broken nose?,1.0
+168,bienc_aq_nf_ranker,Which syndrome is known as triple X syndrome?,1.0
+169,bienc_aq_nf_ranker,What are the symptoms of chronic hives?,0.6023097498746199
+170,bienc_aq_nf_ranker,What is the typical time span for the development of symptoms of epiglottitis?,1.0
+171,bienc_aq_nf_ranker,What are the symptoms of long term exposure to asbestos?,1.0
+172,bienc_aq_nf_ranker,What can increase the pain?,0.3032266514147959
+173,bienc_aq_nf_ranker,"Who does the word ""abuser"" refer to?",1.0
+174,bienc_aq_nf_ranker,How can you tell if you are albinic?,0.0
+175,bienc_aq_nf_ranker,What are some symptoms of pediatric sleep apnea?,1.0
+176,bienc_aq_nf_ranker,What is the first symptom that should be looked for in infants with reflux?,1.0
+177,bienc_aq_nf_ranker,what are signs and symptoms of encopresis?,1.0
+178,bienc_aq_nf_ranker,What is the most common sign of hydrocele?,1.0
+179,bienc_aq_nf_ranker,what can cause blood in your urine?,0.49523840430730154
+180,bienc_nq_bf_ranker,What are the symptoms of a rash on the hands?,0.49068031381933436
+181,bienc_nq_bf_ranker,what do we need to know before attelectasis is diagnosed?,1.0
+182,bienc_nq_bf_ranker,How do you know if you have a popliteal artery aneurysm?,1.0
+183,bienc_nq_bf_ranker,what are the symptoms of pediatric sleep apnea?,1.0
+184,bienc_nq_bf_ranker,what is the common sign of spinal stenosis,1.0
+185,bienc_nq_bf_ranker,who has a broken nose?,1.0
+186,bienc_nq_bf_ranker,Which syndrome is known as triple X syndrome?,1.0
+187,bienc_nq_bf_ranker,What are the symptoms of chronic hives?,0.6023097498746199
+188,bienc_nq_bf_ranker,What is the typical time span for the development of symptoms of epiglottitis?,1.0
+189,bienc_nq_bf_ranker,What are the symptoms of long term exposure to asbestos?,1.0
+190,bienc_nq_bf_ranker,What can increase the pain?,0.3032266514147959
+191,bienc_nq_bf_ranker,"Who does the word ""abuser"" refer to?",1.0
+192,bienc_nq_bf_ranker,How can you tell if you are albinic?,0.0
+193,bienc_nq_bf_ranker,What are some symptoms of pediatric sleep apnea?,1.0
+194,bienc_nq_bf_ranker,What is the first symptom that should be looked for in infants with reflux?,1.0
+195,bienc_nq_bf_ranker,what are signs and symptoms of encopresis?,1.0
+196,bienc_nq_bf_ranker,What is the most common sign of hydrocele?,1.0
+197,bienc_nq_bf_ranker,what can cause blood in your urine?,0.5328176369791345
+198,bienc_nq_sf_ranker,What are the symptoms of a rash on the hands?,0.5722532654451172
+199,bienc_nq_sf_ranker,what do we need to know before attelectasis is diagnosed?,1.0
+200,bienc_nq_sf_ranker,How do you know if you have a popliteal artery aneurysm?,1.0
+201,bienc_nq_sf_ranker,what are the symptoms of pediatric sleep apnea?,1.0
+202,bienc_nq_sf_ranker,what is the common sign of spinal stenosis,1.0
+203,bienc_nq_sf_ranker,who has a broken nose?,1.0
+204,bienc_nq_sf_ranker,Which syndrome is known as triple X syndrome?,1.0
+205,bienc_nq_sf_ranker,What are the symptoms of chronic hives?,0.6023097498746199
+206,bienc_nq_sf_ranker,What is the typical time span for the development of symptoms of epiglottitis?,1.0
+207,bienc_nq_sf_ranker,What are the symptoms of long term exposure to asbestos?,1.0
+208,bienc_nq_sf_ranker,What can increase the pain?,0.3262358219207784
+209,bienc_nq_sf_ranker,"Who does the word ""abuser"" refer to?",1.0
+210,bienc_nq_sf_ranker,How can you tell if you are albinic?,0.0
+211,bienc_nq_sf_ranker,What are some symptoms of pediatric sleep apnea?,1.0
+212,bienc_nq_sf_ranker,What is the first symptom that should be looked for in infants with reflux?,1.0
+213,bienc_nq_sf_ranker,what are signs and symptoms of encopresis?,1.0
+214,bienc_nq_sf_ranker,What is the most common sign of hydrocele?,1.0
+215,bienc_nq_sf_ranker,what can cause blood in your urine?,0.49523840430730154
+216,bienc_aq_ba_ranker,What are the symptoms of a rash on the hands?,0.5347299976803358
+217,bienc_aq_ba_ranker,what do we need to know before attelectasis is diagnosed?,1.0
+218,bienc_aq_ba_ranker,How do you know if you have a popliteal artery aneurysm?,1.0
+219,bienc_aq_ba_ranker,what are the symptoms of pediatric sleep apnea?,1.0
+220,bienc_aq_ba_ranker,what is the common sign of spinal stenosis,1.0
+221,bienc_aq_ba_ranker,who has a broken nose?,1.0
+222,bienc_aq_ba_ranker,Which syndrome is known as triple X syndrome?,1.0
+223,bienc_aq_ba_ranker,What are the symptoms of chronic hives?,0.6023097498746199
+224,bienc_aq_ba_ranker,What is the typical time span for the development of symptoms of epiglottitis?,1.0
+225,bienc_aq_ba_ranker,What are the symptoms of long term exposure to asbestos?,1.0
+226,bienc_aq_ba_ranker,What can increase the pain?,0.3032266514147959
+227,bienc_aq_ba_ranker,"Who does the word ""abuser"" refer to?",1.0
+228,bienc_aq_ba_ranker,How can you tell if you are albinic?,0.0
+229,bienc_aq_ba_ranker,What are some symptoms of pediatric sleep apnea?,1.0
+230,bienc_aq_ba_ranker,What is the first symptom that should be looked for in infants with reflux?,1.0
+231,bienc_aq_ba_ranker,what are signs and symptoms of encopresis?,1.0
+232,bienc_aq_ba_ranker,What is the most common sign of hydrocele?,1.0
+233,bienc_aq_ba_ranker,what can cause blood in your urine?,0.49523840430730154
+234,bienc_nq_ff_ranker,What are the symptoms of a rash on the hands?,0.5406895066199395
+235,bienc_nq_ff_ranker,what do we need to know before attelectasis is diagnosed?,1.0
+236,bienc_nq_ff_ranker,How do you know if you have a popliteal artery aneurysm?,1.0
+237,bienc_nq_ff_ranker,what are the symptoms of pediatric sleep apnea?,1.0
+238,bienc_nq_ff_ranker,what is the common sign of spinal stenosis,1.0
+239,bienc_nq_ff_ranker,who has a broken nose?,1.0
+240,bienc_nq_ff_ranker,Which syndrome is known as triple X syndrome?,1.0
+241,bienc_nq_ff_ranker,What are the symptoms of chronic hives?,0.6023097498746199
+242,bienc_nq_ff_ranker,What is the typical time span for the development of symptoms of epiglottitis?,1.0
+243,bienc_nq_ff_ranker,What are the symptoms of long term exposure to asbestos?,1.0
+244,bienc_nq_ff_ranker,What can increase the pain?,0.3032266514147959
+245,bienc_nq_ff_ranker,"Who does the word ""abuser"" refer to?",1.0
+246,bienc_nq_ff_ranker,How can you tell if you are albinic?,0.0
+247,bienc_nq_ff_ranker,What are some symptoms of pediatric sleep apnea?,1.0
+248,bienc_nq_ff_ranker,What is the first symptom that should be looked for in infants with reflux?,1.0
+249,bienc_nq_ff_ranker,what are signs and symptoms of encopresis?,1.0
+250,bienc_nq_ff_ranker,What is the most common sign of hydrocele?,1.0
+251,bienc_nq_ff_ranker,what can cause blood in your urine?,0.5057408901834421
