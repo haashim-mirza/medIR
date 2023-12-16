@@ -1,4 +1,4 @@
-,model,query,ndcg
+index,model,query,ndcg
 0,bm25_native_scores,What are the symptoms of a rash on the hands?,0.43827031084946777
 1,bm25_native_scores,what do we need to know before attelectasis is diagnosed?,1.0
 2,bm25_native_scores,How do you know if you have a popliteal artery aneurysm?,1.0
