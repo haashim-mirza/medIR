@@ -6,7 +6,7 @@ from langchain.embeddings import HuggingFaceEmbeddings
 
 
 class VectorDBRanker(Ranker):
-    def __init__(self, raw_id_to_text: list[int]) -> None:
+    def __init__(self, raw_id_to_text: dict[int, str]) -> None:
         """
         Initializes a VectorRanker object.
 
