@@ -56,34 +56,34 @@ class VectorDBRanker(Ranker):
         return tups
 
 
-import json
+# import json
 
-docid_to_text = {}
-with open("final_data.json", "r") as f:
-    for line in f:
-        raw_data = json.loads(line)
-        docid_to_text[int(raw_data["docid"])] = raw_data["text"]
+# docid_to_text = {}
+# with open("final_data.json", "r") as f:
+#     for line in f:
+#         raw_data = json.loads(line)
+#         docid_to_text[int(raw_data["docid"])] = raw_data["text"]
 
 
-# instance = VectorDBRanker(raw_id_to_text=docid_to_text)
-# print(instance.query("I have a headache"))
+# # instance = VectorDBRanker(raw_id_to_text=docid_to_text)
+# # print(instance.query("I have a headache"))
 
-res_1 = [
-    (981, -21.280967205811667),
-    (21, -21.67465653447968),
-    (410, -22.3849624300556),
-    (834, -23.43059539587995),
-]
-res_2 = [
-    (981, 0.33328755921641506),
-    (834, 0.25723074723965655),
-    (187, 0.2560577161519013),
-    (1030, 0.2519613796514305),
-]
+# res_1 = [
+#     (981, -21.280967205811667),
+#     (21, -21.67465653447968),
+#     (410, -22.3849624300556),
+#     (834, -23.43059539587995),
+# ]
+# res_2 = [
+#     (981, 0.33328755921641506),
+#     (834, 0.25723074723965655),
+#     (187, 0.2560577161519013),
+#     (1030, 0.2519613796514305),
+# ]
 
-for key, score in res_1:
-    print(docid_to_text[key])
+# for key, score in res_1:
+#     print(docid_to_text[key])
 
-print("--------------------------------------------------")
-for key, score in res_2:
-    print(docid_to_text[key])
+# print("--------------------------------------------------")
+# for key, score in res_2:
+#     print(docid_to_text[key])
